@@ -15,7 +15,7 @@ const Navbar = () => {
   const handleMenuClick = (event) => setAnchorEl(event.currentTarget);
   const handleMenuClose = () => setAnchorEl(null);
 
-  const navItems = [ 'Features', 'About', 'Contact'];
+  const navItems = [ 'Home', 'Features', 'About', 'Contact'];
 
   return (
     <AppBar
