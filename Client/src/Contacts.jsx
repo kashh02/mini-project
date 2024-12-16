@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import CircularProgress from '@mui/material/CircularProgress';
+import Navbar from './Navbar';
+import Footer from './Footer'; // Import Footer Component
 
 const ContactUsForm = () => {
   const [name, setName] = useState('');
@@ -46,6 +48,7 @@ const ContactUsForm = () => {
 
   return (
     <div className="contact-us-section p-10 bg-gray-100">
+      <Navbar />
       {submitted ? (
         <div className="text-center">
           <h3 className="text-2xl font-bold text-green-600">Thank You for Contacting Us, {name}!</h3>
@@ -99,6 +102,8 @@ const ContactUsForm = () => {
           </form>
         </div>
       )}
+
+      <Footer /> {/* Footer added here */}
     </div>
   );
 };

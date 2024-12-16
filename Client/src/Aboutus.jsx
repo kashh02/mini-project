@@ -7,10 +7,13 @@ import {
   CodeIcon, 
   DatabaseIcon 
 } from 'lucide-react';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const RestaurantWebsite = () => {
   return (
     <div className="bg-green-50 min-h-screen">
+       <Navbar/>
       {/* About Us Section */}
       <section className="bg-green-100 py-16 px-4">
         <div className="container mx-auto">
@@ -169,6 +172,7 @@ const RestaurantWebsite = () => {
           </div>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 };

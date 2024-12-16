@@ -5,6 +5,8 @@ import Modal from 'react-modal';
 import RestaurantMap from './RestaurantMap'; // Ensure the correct path
 import "/src/NearbyRestaurants.css"; // Ensure styles are included
 import { motion } from "framer-motion";
+import Navbar from './Navbar';
+import Footer from './Footer'; // Import Footer Component
 
 // Modal.setAppElement('#root'); // Uncomment this for accessibility
 
@@ -102,6 +104,7 @@ const NearbyRestaurants = () => {
 
     return (
         <div className="restaurant-list">
+            <Navbar />
             {restaurants.map((restaurant) => (
                 <motion.div
                     key={restaurant.fsq_id}
@@ -122,30 +125,29 @@ const NearbyRestaurants = () => {
             ))}
 
             {/* Modal to show map */}
-        
+            <Modal
+                isOpen={!!selectedRestaurant}
+                onRequestClose={closeMap}
+                className="modal-content"
+                overlayClassName="modal-overlay"
+            >
+                {selectedRestaurant && (
+                    <div>
+                        <div className="map-container">
+                            <RestaurantMap
+                                latitude={selectedRestaurant.geocodes.main.latitude}
+                                longitude={selectedRestaurant.geocodes.main.longitude}
+                                name={selectedRestaurant.name}
+                            />
+                        </div>
+                        <button onClick={closeMap} className="close-map-btn">
+                            Close Map
+                        </button>
+                    </div>
+                )}
+            </Modal>
 
-<Modal
-    isOpen={!!selectedRestaurant}
-    onRequestClose={closeMap}
-    className="modal-content"
-    overlayClassName="modal-overlay"
->
-    {selectedRestaurant && (
-        <div>
-            <div className="map-container">
-                <RestaurantMap
-                    latitude={selectedRestaurant.geocodes.main.latitude}
-                    longitude={selectedRestaurant.geocodes.main.longitude}
-                    name={selectedRestaurant.name}
-                />
-            </div>
-            <button onClick={closeMap} className="close-map-btn">
-                Close Map
-            </button>
-        </div>
-    )}
-</Modal>
-
+            <Footer /> {/* Footer added here */}
         </div>
     );
 };

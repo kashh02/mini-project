@@ -15,7 +15,7 @@ const Navbar = () => {
   const handleMenuClick = (event) => setAnchorEl(event.currentTarget);
   const handleMenuClose = () => setAnchorEl(null);
 
-  const navItems = [ 'Home', 'Features', 'About', 'Contact'];
+  const navItems = ['Home', 'Features', 'About', 'Contact'];
 
   return (
     <AppBar
@@ -61,12 +61,12 @@ const Navbar = () => {
             {navItems.map((item) => (
               <Button
                 key={item}
-                component={item === 'Features' ? ScrollLink : Link}
-                to={item === 'Features' ? 'features-section' : `/${item.toLowerCase()}`}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
+                component={item === 'Home' ? Link : item === 'Features' ? ScrollLink : Link}
+                to={item === 'Home' ? '/' : item === 'Features' ? 'features-section' : `/${item.toLowerCase()}`}
+                spy={item === 'Features'}
+                smooth={item === 'Features'}
+                offset={item === 'Features' ? -70 : undefined}
+                duration={item === 'Features' ? 500 : undefined}
                 sx={{
                   color: '#333',
                   fontWeight: '500',
