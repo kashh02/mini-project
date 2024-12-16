@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
 import { FaSearchLocation } from 'react-icons/fa';
 import { Link as ScrollLink } from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUtensils } from '@fortawesome/free-solid-svg-icons';  // Correct icon import
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -52,7 +54,7 @@ const Navbar = () => {
             transition: 'color 0.3s ease',
           }}
         >
-          Spoon & Fork
+          Spoon <FontAwesomeIcon icon={faUtensils} /> Fork  {/* Corrected icon usage */}
         </Typography>
 
         {/* Desktop Navigation */}
