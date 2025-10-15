@@ -145,7 +145,7 @@ const Footer = () => {
           &copy; 2024 Spoon & Fork. All Rights Reserved.
         </Typography>
         <Typography variant="body2" color="inherit" mt={2}>
-        Made with ❤️ by  Arjun & Ishika
+        Made with ❤️ by  Kashish & Nandini
         </Typography>
       </Box>
     </motion.footer>
