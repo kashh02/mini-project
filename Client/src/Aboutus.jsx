@@ -124,14 +124,14 @@ const RestaurantWebsite = () => {
                 Frontend Developer
               </h3>
               <p className="text-green-700">
-                Arjun is a dedicated full stack developer with a passion for
-                creating visually stunning and user-friendly web interfaces. He
+                Kashish is a dedicated full stack developer with a passion for
+                creating visually stunning and user-friendly web interfaces. She
                 focuses on enhancing the user experience through intuitive
                 designs and seamless interactions.
               </p>
               <div className="flex justify-center space-x-4 mt-4">
                 <a
-                  href="https://www.linkedin.com/in/arjun-vats-055027205?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  href="https://www.linkedin.com/in/kashish-gupta21/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -154,14 +154,14 @@ const RestaurantWebsite = () => {
                 Full Stack Developer
               </h3>
               <p className="text-green-700">
-                Ishika is a versatile full stack developer, skilled in both
-                frontend and backend technologies. she is passionate about
+                Nandini is a versatile full stack developer, skilled in both
+                frontend and backend technologies. She is passionate about
                 building robust web applications from the ground up, ensuring
                 both functionality and a smooth user experience.
               </p>
               <div className="flex justify-center space-x-4 mt-4">
                 <a
-                  href="https://www.linkedin.com/in/ishika-jain-3343b6253/"
+                  href="https://www.linkedin.com/in/nandini-pawar-430506305/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

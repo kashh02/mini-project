@@ -50,7 +50,7 @@ const Loader = () => (
       animate={{ opacity: 1 }}
       transition={{ delay: 1, duration: 1 }}
     >
-      Crafted with ❤️ by Arjun and Ishika, powered by coffee ☕️
+      Crafted with ❤️ by Kashish & Nandini, powered by coffee ☕️
     </motion.div>
 
     {/* Loader Animation Circle with Pulse Effect */}
