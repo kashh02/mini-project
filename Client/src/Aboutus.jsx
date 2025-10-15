@@ -154,14 +154,14 @@ const RestaurantWebsite = () => {
                 Full Stack Developer
               </h3>
               <p className="text-green-700">
-                Nandini is a versatile full stack developer, skilled in both
+                Ishika is a versatile full stack developer, skilled in both
                 frontend and backend technologies. She is passionate about
                 building robust web applications from the ground up, ensuring
                 both functionality and a smooth user experience.
               </p>
               <div className="flex justify-center space-x-4 mt-4">
                 <a
-                  href="https://www.linkedin.com/in/nandini-pawar-430506305/"
+                  href="https://www.linkedin.com/in/ishika-jain-3343b6253/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
